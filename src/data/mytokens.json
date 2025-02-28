@@ -1,0 +1,32 @@
+[
+	{
+		"imageSrc": "",
+		"name": "Bitcoin",
+		"price": "12,889.00"
+	},
+	{
+		"imageSrc": "",
+		"name": "Etherum",
+		"price": "10,666.00"
+	},
+	{
+		"imageSrc": "",
+		"name": "XRP",
+		"price": "8,122.00"
+	},
+	{
+		"imageSrc": "",
+		"name": "Kaspa",
+		"price": "4,298.00"
+	},
+	{
+		"imageSrc": "",
+		"name": "Kaspa",
+		"price": "3,412.00"
+	},
+	{
+		"imageSrc": "",
+		"name": "Kaspa",
+		"price": "1,999.00"
+	}
+]

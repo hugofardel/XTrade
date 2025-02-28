@@ -1,0 +1,32 @@
+[
+	{
+		"imageSrc": "https://www.cryptocompare.com/media/37746238/eth.png",
+		"symbol": "Ethereum",
+		"action": "buy",
+		"profit": 187
+	},
+	{
+		"imageSrc": "https://www.cryptocompare.com/media/37746238/eth.png",
+		"symbol": "Ethereum",
+		"action": "buy",
+		"profit": 155
+	},
+	{
+		"imageSrc": "https://www.cryptocompare.com/media/37746238/eth.png",
+		"symbol": "Ethereum",
+		"action": "buy",
+		"profit": 1210
+	},
+	{
+		"imageSrc": "https://www.cryptocompare.com/media/37746238/eth.png",
+		"symbol": "Ethereum",
+		"action": "buy",
+		"profit": 33
+	},
+	{
+		"imageSrc": "https://www.cryptocompare.com/media/37746238/eth.png",
+		"symbol": "Ethereum",
+		"action": "buy",
+		"profit": 80
+	}
+]
