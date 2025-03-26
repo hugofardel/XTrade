@@ -151,6 +151,24 @@ h3{
 	font-size: 1.2rem;
 }
 
+&::-webkit-scrollbar-track {
+	border-radius: 15px;
+	margin: 0 40px;
+	padding: 0 50px;
+}
+
+&::-webkit-scrollbar {
+	width: 14px;
+}
+
+&::-webkit-scrollbar-thumb {
+	border: 4px solid rgba(0, 0, 0, 0);
+	background-clip: padding-box;
+	border-radius: 9999px;
+	background-color: #aaaaaa;
+}
+
+
 @keyframes skeleton {
 	0% {
 		opacity: 1;

@@ -21,6 +21,6 @@
 
 ### TODO
 
-- [] ajout to watchlist (icone active ou non) => markets
+- [x] ajout to watchlist (icone active ou non) => markets
 - [] wallet voir pour remplacer balance
-- [] github
+- [x] github

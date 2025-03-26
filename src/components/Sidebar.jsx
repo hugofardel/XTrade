@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import { RiShoppingBasketFill } from "react-icons/ri";
 import { TbTransactionBitcoin } from "react-icons/tb";
-import { IoIosLogOut, IoIosSettings, IoMdHome } from "react-icons/io";
-import { Link, NavLink } from "react-router-dom";
+import { IoIosLogOut, IoMdHome } from "react-icons/io";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 
 const StyledSidebar = styled.nav`
 	/* 
@@ -60,6 +60,21 @@ const NavItem = styled.li`
 	}
 `;
 
+const LogoutCTA = styled.button`
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	gap: 8px;
+	color: #888a8e;
+	background-color: transparent;
+	border: none;
+	padding-left: 0;
+
+	&:hover {
+		color: var(--color-orange);
+	}
+`;
+
 const LogoSection = styled(Link)`
 	display: flex;
 	align-items: center;
@@ -83,6 +98,13 @@ const AppName = styled.span`
 `;
 
 function Sidebar() {
+	const navigate = useNavigate();
+
+	function logout() {
+		localStorage.setItem("isConnected", JSON.stringify(false));
+		navigate("/login");
+	}
+
 	return (
 		<StyledSidebar>
 			<div className="wrapper">
@@ -116,17 +138,17 @@ function Sidebar() {
 			</div>
 
 			<NavList>
-				<NavItem>
+				{/* <NavItem>
 					<NavLink to="/settings">
 						<IoIosSettings />
 						<span>Settings</span>
 					</NavLink>
-				</NavItem>
+				</NavItem> */}
 				<NavItem>
-					<NavLink to="/logout">
+					<LogoutCTA onClick={logout}>
 						<IoIosLogOut />
 						<span>Log out</span>
-					</NavLink>
+					</LogoutCTA>
 				</NavItem>
 			</NavList>
 		</StyledSidebar>

@@ -30,14 +30,23 @@ const NameCrypto = styled.div`
 	gap: 10px;
 	color: #6b6c70;
 
+	width: 500px;
+	max-width: 50%;
+
 	img {
 		width: 2.5rem;
 	}
 `;
 
+const Price = styled.div`
+	flex: 1;
+	text-align: left;
+`;
+
 const Evolution = styled.div`
 	color: var(--color-green);
 	font-size: var(--fs-md);
+	width: 120px;
 `;
 
 // const WATCHLIST = ["KAS", "BTC", "ETH"];
@@ -72,7 +81,7 @@ function WatchList() {
 							<img src={symbol.LOGO_URL} alt={symbol.NAME} />
 							{symbol.NAME}
 						</NameCrypto>
-						<div className="price">{valueToCurrency(round(symbol.PRICE_USD))}</div>
+						<Price>{valueToCurrency(round(symbol.PRICE_USD))}</Price>
 						<Evolution> 21.7%</Evolution>
 					</Crypto>
 				))}

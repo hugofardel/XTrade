@@ -26,14 +26,23 @@ const NameCrypto = styled.div`
 	gap: 10px;
 	color: #6b6c70;
 
+	width: 500px;
+	max-width: 50%;
+
 	img {
 		width: 2.5rem;
 	}
 `;
 
+const Price = styled.div`
+	flex: 1;
+	text-align: left;
+`;
+
 const Evolution = styled.div`
 	color: var(--color-green);
 	font-size: var(--fs-md);
+	width: 120px;
 `;
 
 const BASE_URL = "https://www.cryptocompare.com";
@@ -61,7 +70,7 @@ function MarketsOverview() {
 							<img src={BASE_URL + coin.CoinInfo.ImageUrl} alt={coin.CoinInfo.Name} />
 							{coin.CoinInfo.Name}
 						</NameCrypto>
-						<div className="price">{coin["DISPLAY"]["USD"]["PRICE"]}</div>
+						<Price>{coin["DISPLAY"]["USD"]["PRICE"]}</Price>
 						<Evolution> {coin["DISPLAY"]["USD"]["CHANGEPCTDAY"]}%</Evolution>
 					</Crypto>
 				))}

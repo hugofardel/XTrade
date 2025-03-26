@@ -12,7 +12,7 @@ export async function getTopList() {
 }
 
 export async function getHistorySymbolDaily(symbol) {
-	const res = await fetch(`https://min-api.cryptocompare.com/data/v2/histoday?fsym=${symbol}&tsym=USD&limit=60`, {
+	const res = await fetch(`https://min-api.cryptocompare.com/data/v2/histoday?fsym=${symbol}&tsym=USD&limit=300`, {
 		headers: {
 			"Content-Type": "application/json",
 			Authorization: `Apikey ${import.meta.env.VITE_API_KEY}`,

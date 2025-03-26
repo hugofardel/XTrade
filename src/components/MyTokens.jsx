@@ -27,6 +27,9 @@ const NameCrypto = styled.div`
 	gap: 10px;
 	color: #6b6c70;
 
+	width: 500px;
+	max-width: 50%;
+
 	img {
 		width: 2.5rem;
 	}
@@ -35,6 +38,12 @@ const NameCrypto = styled.div`
 const Evolution = styled.div`
 	color: var(--color-green);
 	font-size: var(--fs-md);
+	width: 120px;
+`;
+
+const Price = styled.div`
+	flex: 1;
+	text-align: left;
 `;
 
 const TOKENS = [
@@ -65,8 +74,8 @@ function MyTokens() {
 							<img src={symbol.LOGO_URL} alt={symbol.NAME} />
 							{symbol.NAME}
 						</NameCrypto>
-						<div className="price">1978 {symbol.SYMBOL}</div>
-						<div className="price">{valueToCurrency(round(symbol.PRICE_USD, 2))}</div>
+						<Price>1978 {symbol.SYMBOL}</Price>
+						<Price>{valueToCurrency(round(symbol.PRICE_USD, 2))}</Price>
 						<Evolution> 21.7%</Evolution>
 					</Crypto>
 				))}

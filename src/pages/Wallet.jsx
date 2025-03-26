@@ -11,12 +11,6 @@ const GridContainer = styled.div`
 	width: 100%;
 `;
 
-const GridTokens = styled.div`
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 1.5rem;
-`;
-
 function Wallet() {
 	return (
 		<>
@@ -34,43 +28,40 @@ function Wallet() {
 
 				<Balance>
 					<Balance.Header>
-						<Balance.Title>Balance</Balance.Title>
+						<Balance.Title>Best Token of the day</Balance.Title>
 						<Balance.Icon icon={FaDollarSign} />
 					</Balance.Header>
 					<Balance.Content>
-						<Balance.CurrentBalance>$45,231.89</Balance.CurrentBalance>
-						<Balance.Evolution>+20.1% from last month</Balance.Evolution>
+						<Balance.CurrentBalance>$85145</Balance.CurrentBalance>
+						<Balance.Evolution>+3.8% today</Balance.Evolution>
 					</Balance.Content>
 				</Balance>
 
 				<Balance>
 					<Balance.Header>
-						<Balance.Title>Balance</Balance.Title>
+						<Balance.Title>Worst Token of the day</Balance.Title>
 						<Balance.Icon icon={FaDollarSign} />
 					</Balance.Header>
 					<Balance.Content>
-						<Balance.CurrentBalance>$45,231.89</Balance.CurrentBalance>
-						<Balance.Evolution>+20.1% from last month</Balance.Evolution>
+						<Balance.CurrentBalance>$0.156</Balance.CurrentBalance>
+						<Balance.Evolution> -1.8% today</Balance.Evolution>
 					</Balance.Content>
 				</Balance>
 
 				<Balance>
 					<Balance.Header>
-						<Balance.Title>Balance</Balance.Title>
+						<Balance.Title>Total profit/loss</Balance.Title>
 						<Balance.Icon icon={FaDollarSign} />
 					</Balance.Header>
 					<Balance.Content>
-						<Balance.CurrentBalance>$45,231.89</Balance.CurrentBalance>
-						<Balance.Evolution>+20.1% from last month</Balance.Evolution>
+						<Balance.CurrentBalance>+190$</Balance.CurrentBalance>
 					</Balance.Content>
 				</Balance>
 			</GridContainer>
 
 			<GraphBalance />
 
-			<GridTokens>
-				<MyTokens />
-			</GridTokens>
+			<MyTokens />
 		</>
 	);
 }

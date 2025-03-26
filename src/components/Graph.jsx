@@ -43,7 +43,12 @@ function Graph() {
 			wickDownColor: "#ef5350",
 		});
 		candlestickSeries.setData(data);
-		chart.timeScale().fitContent();
+
+		const vr = chart.timeScale().getVisibleLogicalRange();
+
+		if (vr) {
+			chart.timeScale().setVisibleLogicalRange({ from: vr.to - 60, to: vr.to - 0.5 });
+		}
 
 		window.addEventListener("resize", handleResize);
 

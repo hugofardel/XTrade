@@ -13,8 +13,7 @@ const HeaderBox = styled.div`
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-	padding: 1rem;
-	padding-bottom: 0.5rem;
+	padding: 1rem 0 0.5rem 0;
 
 	& svg {
 		height: 1.25rem;
@@ -31,7 +30,7 @@ const Title = styled.div`
 `;
 
 const Content = styled.div`
-	padding: 1rem;
+	padding: 0.5rem 0 1rem 0;
 	padding-top: 0.5rem;
 	text-align: left;
 	color: white;
