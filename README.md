@@ -17,13 +17,13 @@ XTrade est une application web développée en React qui permet aux utilisateurs
 1. Clonez ce dépôt :
 
    ```
-   git clone https://github.com/votre-nom/cryptowatch.git
+   git clone https://github.com/hugofardel/XTrade.git
    ```
 
 2. Naviguez dans le dossier du projet :
 
    ```
-   cd cryptowatch
+   cd xtrade
    ```
 
 3. Installez les dépendances :
