@@ -49,13 +49,14 @@ const Evolution = styled.div`
 	width: 120px;
 `;
 
-// const WATCHLIST = ["KAS", "BTC", "ETH"];
-
 function WatchList() {
 	const watchlist = useMemo(() => {
 		const saved = localStorage.getItem("watchlist");
 		const initialValue = JSON.parse(saved);
-		return initialValue || ["BTC", "ETH"];
+		if (!initialValue || !initialValue.length) {
+			return ["BTC", "ETH"];
+		}
+		return initialValue;
 	}, []);
 
 	const { isLoading, data, error } = useWatchList(watchlist);
