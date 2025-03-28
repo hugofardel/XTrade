@@ -67,7 +67,7 @@ function Graph() {
 			<FlexSpaceBetween style={{ marginBottom: "1rem" }}>
 				<h2>Price</h2>
 
-				<RoundedSelect value={symbol} onChange={handleChangeSymbol}>
+				<RoundedSelect value={symbol} onChange={handleChangeSymbol} aria-label="Symbol">
 					{COINS.map((coin) => (
 						<option key={coin.Id} value={coin.Symbol}>
 							{coin.Symbol}-USD
