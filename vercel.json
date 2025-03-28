@@ -4,5 +4,6 @@
 			"source": "/(.*)",
 			"headers": [{ "key": "x-robots-tag", "value": "index, follow" }]
 		}
-	]
+	],
+	"rewrites": [{ "source": "/(.*)", "destination": "/" }]
 }
