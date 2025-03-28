@@ -25,8 +25,6 @@ const StarFilled = styled(RxStarFilled)`
 	filter: drop-shadow(0 0 0.75rem var(--color-orange));
 `;
 
-// const WATCHLIST = ["KAS", "BTC", "ETH"];
-
 function TokenRow({ token, rank, isInclude, toggleToWatch }) {
 	return (
 		<Table.Row>
